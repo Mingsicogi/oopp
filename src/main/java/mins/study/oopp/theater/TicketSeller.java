@@ -23,4 +23,8 @@ public class TicketSeller {
 
         return ticketToBuy;
     }
+
+    public int howManySeats(Ticket ticket) {
+        return ticketManagement.numberOfAvailableSeats(ticket);
+    }
 }

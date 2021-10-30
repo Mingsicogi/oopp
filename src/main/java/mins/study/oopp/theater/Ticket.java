@@ -11,10 +11,10 @@ public class Ticket {
     private Long id;
 
     private Integer price;
-    private MovieSchedule movieSchedule;
+    private TheaterSchedule theaterSchedule;
 
-    public Ticket(Integer price, MovieSchedule movieSchedule) {
+    public Ticket(Integer price, TheaterSchedule theaterSchedule) {
         this.price = price;
-        this.movieSchedule = movieSchedule;
+        this.theaterSchedule = theaterSchedule;
     }
 }
