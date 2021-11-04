@@ -5,21 +5,21 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class TheaterSchedule {
+public class ScreeningSchedule {
     private Long id;
 
     private LocalDateTime startTme;
     private LocalDateTime endTime;
 
-    private Theater theater;
+    private Screening screening;
     private Movie movie;
     private Integer availableNumberOfSeats;
 
-    public TheaterSchedule(LocalDateTime startTme, LocalDateTime endTime, Theater theater, Movie movie) {
+    public ScreeningSchedule(LocalDateTime startTme, LocalDateTime endTime, Screening screening, Movie movie) {
         this.startTme = startTme;
         this.endTime = endTime;
-        this.theater = theater;
+        this.screening = screening;
         this.movie = movie;
-        this.availableNumberOfSeats = theater.getNumberOfSeats();
+        this.availableNumberOfSeats = screening.getNumberOfSeats();
     }
 }

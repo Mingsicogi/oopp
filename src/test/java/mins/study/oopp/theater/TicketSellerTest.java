@@ -14,10 +14,10 @@ class TicketSellerTest {
         // GIVE
         Employee employee = new Employee("minssogi", "010-1234-5678", 20);
         Movie ironMan = new Movie("아이언맨", "로다쥬 나오는 아이언맨 1편임.");
-        Theater theater = new Theater(TheaterType.IMAX, 300);
+        Screening screening = new Screening(ScreeningType.IMAX, 300);
 
-        TheaterSchedule ironManTheaterSchedule = new TheaterSchedule(LocalDateTime.now(), LocalDateTime.now().plusMonths(1L), theater, ironMan);
-        Ticket ticket = new Ticket(25_000, ironManTheaterSchedule);
+        ScreeningSchedule ironManScreeningSchedule = new ScreeningSchedule(LocalDateTime.now(), LocalDateTime.now().plusMonths(1L), screening, ironMan);
+        Ticket ticket = new Ticket(25_000, ironManScreeningSchedule);
 
         TicketManagement ticketManagement = new TicketManagement(ticket);
 

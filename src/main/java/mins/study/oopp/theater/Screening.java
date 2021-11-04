@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
  */
 @Getter
 @NoArgsConstructor
-public class Theater {
+public class Screening {
 
     private Long id;
 
     private Integer numberOfSeats;
-    private TheaterType type;
+    private ScreeningType type;
 
-    public Theater(TheaterType type, Integer numberOfSeats) {
+    public Screening(ScreeningType type, Integer numberOfSeats) {
         this.type = type;
         this.numberOfSeats = numberOfSeats;
     }

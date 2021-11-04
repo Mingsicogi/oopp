@@ -43,7 +43,7 @@ public class TicketManagement {
 
         public ManagementInfo(Ticket ticket) {
             this.ticket = ticket;
-            this.availableTickets = ticket.getTheaterSchedule().getAvailableNumberOfSeats();
+            this.availableTickets = ticket.getScreeningSchedule().getAvailableNumberOfSeats();
             this.managementDate = LocalDate.now();
         }
 
