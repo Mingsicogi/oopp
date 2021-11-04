@@ -13,11 +13,17 @@ public class Screening {
 
     private Long id;
 
-    private Integer numberOfSeats;
+    private Movie movie;
     private ScreeningType type;
 
-    public Screening(ScreeningType type, Integer numberOfSeats) {
+    private Integer price;
+
+    private Integer numberOfSeats;
+
+    public Screening(Movie movie, ScreeningType type, Integer price, Integer numberOfSeats) {
+        this.movie = movie;
         this.type = type;
+        this.price = price;
         this.numberOfSeats = numberOfSeats;
     }
 }
